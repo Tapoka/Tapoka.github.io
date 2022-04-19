@@ -26,6 +26,7 @@
 
 .content-container.container {
     grid-area: main;
+    padding: 5px;
     background-color: chocolate;
 }
 
@@ -34,10 +35,20 @@
     background-color: blueviolet;
 }
 
+.sidebar-container > .container {
+    text-align: center;
+    margin: 10px 0;
+}
+
 .footer-container.container {
     grid-area: footer;
     background-color: brown;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
 }
+
+
 
 #Title {
     justify-content: center;
