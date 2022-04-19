@@ -1,0 +1,12 @@
+:root {
+
+    /* basic website shape */
+    --content-separation-space: 20px;   
+    
+    
+    /* sidebar */
+    --sidebar-width:150px;
+
+    /* footer */
+    --footer-height: 40px;
+}

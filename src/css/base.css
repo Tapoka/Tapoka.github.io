@@ -8,35 +8,41 @@
     width: 100%;
     display: grid;
     display: grid;
-    grid-template-columns: 150px 40px auto 40px;
-    grid-template-rows: auto;
+    grid-template-columns: var(--sidebar-width) var(--content-separation-space) auto var(--content-separation-space);
+    grid-template-rows: auto var(--content-separation-space) auto var(--content-separation-space) var(--footer-height);
     grid-template-areas:
         "header header header header"
+        ". . . ."
         "sidebar . main ."
-        "sidebar . main .";
+        ". . . ."
+        "footer footer footer footer";
 
 }
 
 .header-container.container {
     grid-area: header;
+    background-color: aqua;
 }
 
 .content-container.container {
     grid-area: main;
-
-
+    background-color: chocolate;
 }
 
 .sidebar-container.container {
     grid-area: sidebar;
+    background-color: blueviolet;
 }
 
-
+.footer-container.container {
+    grid-area: footer;
+    background-color: brown;
+}
 
 #Title {
     justify-content: center;
     text-align: center;
-    font-size: 3em;
+    font-size: 10vh;
     font-family: monospace;
     font-weight: bold;
 }
